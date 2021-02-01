@@ -26,4 +26,10 @@
       become: yes
       shell: rabbitmq-plugins enable rabbitmq_management
 
+    - name: Add initial user
+      become: yes
+      shell: |
+        rabbitmqctl add_user khalid Welcome1
+        rabbitmqctl set_user_tags khalid administrator
+
 ...
