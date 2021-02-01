@@ -25,3 +25,5 @@
     - name: Enable RabbitMQ management plugin
       become: yes
       shell: rabbitmq-plugins enable rabbitmq_management
+
+...
